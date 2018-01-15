@@ -5,7 +5,7 @@ Working with the Muse Head Band Device
 
 http://www.choosemuse.com/
 
-and an HUE Philips Device
+and HUE Philips Device
 
 https://www2.meethue.com/en-us
 
@@ -18,7 +18,7 @@ https://www.microsoft.com/en-us/store/p/muse-direct/9p0mbp6nv07x
 
 * 3 - You have to know your HUE ip on the local network
 
-* 4 - Define your hueIp on app.js
+* 4 - Define your HUE ip on app.js
 ```
 var hueIp = "YOUR IP DEVICE";
 ```
