@@ -1,0 +1,115 @@
+<head>
+    
+    <meta charset="utf-8">
+   
+    <title>cMSjS</title>
+	
+	<link rel="stylesheet" type="text/css" href="/design.css" />
+
+</head>
+
+
+<body>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://localhost:8081/socket.io/socket.io.js"></script>     
+		
+
+</br>
+
+<h1 class="centeredText">Check Attention</h1>
+
+</br>
+
+<p class="centeredText">Attention = <a id="attentionValue"></a></p>
+		
+<p class="centeredText">Concentration  = <a id="attentionValueB"></a></p>
+
+</br>
+
+<!--
+<p class="centeredText">Focus yourself and try to control the bulb intensity. The bulb is on when you're focused, and off when you're unfocused.</p>
+-->
+<p class="centeredText">Concentrez vous et essayez de controler l'ampoule.</br> L'ampoule s'allume quand vous etes concentres, et s'eteint quand vous etes distraits.</p>
+
+
+<p class="centeredText">
+<a href="/restart">Restart</a>
+
+</p>
+
+
+	<script>  
+	
+	var attentionValue = 0;
+	var attentionThreshold = 2000;
+	
+	
+	var soundName = 'Meditating_Music.mp3';
+
+	var soundPlayer = new Audio(soundName);
+	soundPlayer.play();
+
+
+
+function checkAudioCurrentTime(){
+
+	<!-- console.log("CURRENT TIME "+ soundPlayer.currentTime); -->
+
+	var duration = soundPlayer.duration;
+
+	if(soundPlayer.currentTime >= duration){
+		//alert("sound over");
+		window.location.replace("http://localhost:8080/playEegMusic");
+	}
+
+}
+
+setInterval(checkAudioCurrentTime,20);
+
+
+
+	
+		var socket = io.connect('http://localhost:8081');
+			socket.on('connect', function(data) {
+			socket.emit('join', 'Socket IO : Connection succesfully started.');
+		});
+		
+		 socket.on('isgood', function(data) {
+            
+			attentionValue += data[4];
+			if(attentionValue < 0)attentionValue = 0;
+			
+			$("#attentionValue").text(attentionValue); 
+			$("#attentionValueB").text(data[4]);
+			
+			console.log("Get attention Level : " + data[4]); 
+			//attentionValue++;
+			//if(attentionValue > attentionThreshold)window.location.replace("http://localhost:8080/playEegMusic");
+				
+        });
+		
+		socket.on('eeg', function(data) {
+                //console.log("EEG : " + data);
+        });
+		
+		
+		setInterval(askIsGoodData,10);
+		
+		function askIsGoodData(){
+			
+			//console.log("ASK IS GOOD DATA");
+			socket.emit('join', 'ASK ATTENTION DATA');
+		
+		}
+		
+		function askEegData(){
+		
+			socket.emit('join', 'ASK EEG DATA');
+		}
+		
+		
+	</script>
+
+</body>

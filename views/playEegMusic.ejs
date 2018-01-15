@@ -1,0 +1,60 @@
+<head>
+    
+    <meta charset="utf-8">
+   
+    <title>cMSjS</title>
+	
+	<link rel="stylesheet" type="text/css" href="/design.css" />
+
+</head>
+
+
+<body>
+
+</br>
+<h1 class="centeredText">EEG Music</h1>
+
+</br>
+
+<!--
+<p class="centeredText">Time to chill and get a short meditation breath in music. </br>The bulb color is now connected to your Electro-EncephaloGram data.</p>
+-->
+<p class="centeredText">Maintenant il est temps de vous relacher et mediter en musique. </BR>La couleur de l'ampoule est connectee aux informations relatives de votre Electro-EncephaloGramme .</p>
+
+
+
+</br>
+
+<p class="centeredText">
+<a href="/credits">Credits</a>
+</p>
+
+
+
+<script>
+
+var soundName = 'ICM_SPOT.mp3';
+
+var soundPlayer = new Audio(soundName);
+soundPlayer.play();
+
+
+
+function checkAudioCurrentTime(){
+
+	<!-- console.log("CURRENT TIME "+ soundPlayer.currentTime); -->
+
+	var duration = soundPlayer.duration;
+
+	if(soundPlayer.currentTime >= duration){
+		//alert("sound over");
+		window.location.replace("http://localhost:8080/credits");
+	}
+
+}
+
+setInterval(checkAudioCurrentTime,20);
+
+</script>
+
+</body>

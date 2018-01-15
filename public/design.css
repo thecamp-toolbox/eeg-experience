@@ -1,0 +1,657 @@
+
+
+@font-face {
+
+   font-family: myFirstFont;
+   src: url(agency.ttf);
+  
+}
+
+
+@font-face {
+
+   font-family: caviar;
+   src: url(Comfortaa-Regular.ttf);
+  
+}
+
+
+@font-face {
+
+   font-family: poiret;
+   src: url(PoiretOne-Regular.ttf);
+  
+}
+
+@font-face {
+
+   font-family: alien;
+   src: url(aliens_and_cows_trial.ttf);
+  
+}
+
+
+
+@font-face {
+
+   font-family: fluoGum;
+   src: url(FluoGums.ttf);
+  
+}
+
+
+@font-face {
+
+   font-family: bolaOcho;
+   src: url(bola-ocho-college-font-ffp.ttf);
+  
+}
+
+
+
+
+@font-face {
+
+   font-family: madeGoodTime;
+   src: url(MADE_GoodTime_Grotesk_PERSONAL_USE.otf);
+  
+}
+
+@font-face {
+
+   font-family: lemon;
+   src: url(LemonMilkbold.otf);
+  
+}
+
+
+@font-face {
+
+   font-family: neuropol;
+   src: url(neuropol.ttf);
+  
+}
+
+@font-face {
+
+   font-family: punk;
+   src: url(PunkEvent.ttf);
+  
+}
+
+#coverTitle{
+	
+	font-family: neuropol;
+	font-size:145%;
+	
+}
+
+#menuTitle{
+	
+	font-family: neuropol;
+	font-size:145%;
+	
+}
+
+#pageTitle{
+	
+	font-family: neuropol;
+	font-size:145%;
+	
+}
+
+#secondaryMenuTitle{
+	
+	font-family: neuropol;
+	font-size:95%;
+	
+}
+
+@font-face {
+  font-family: Agency;
+  src: url("agency.ttf");
+}
+
+@font-face {
+  font-family: Diamond;
+  src: url("Dancing in the Rainbow.ttf");
+}
+
+
+.queryType{
+	
+	background-color:rgb(210,210,210);
+	border: 1 px solid;
+	border-radius:10px;
+	border-color:black;
+	padding:5px;
+	
+}
+
+.personneBagageValue{
+	
+	
+	
+	width:15%;
+	
+	
+	
+}
+
+.definedAddressDiv{
+
+
+	position:absolute;
+
+}
+
+.personneDiv{
+	
+	width:90%;
+	height:30%;
+	position:absolute;
+	top:70%;left:2%;
+
+
+	background-color:rgb(124,27,10);
+	border-radius:2%;
+	
+}
+
+
+
+.definedAddressDiv{
+
+
+
+}
+
+.phoceaSubmit{
+	
+	background-color:rgb(124,27,10);
+	color:white;
+	border-width:0;
+	border-radius:1%;
+	padding:2%;
+}
+
+
+
+
+.phoceaReservationDiv{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background-color:rgb(250,250,25,0);*/
+	background-color:rgb(184,27,10);
+	
+	top:0%;
+	left:0%;
+	padding:3%;
+	
+	
+}
+
+.phoceaReservationDivB{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	/*background-color:rgb(250,250,25,0);*/
+	background-color:rgb(184,27,10);
+	
+	top:0%;
+	left:0%;
+	padding:3%;
+	/* text-align:center; */
+	
+}
+
+.phoceaReservationDiv h2{
+
+color:white;
+font-size:4.7vw;
+
+}
+
+.phoceaReservationDiv p{
+
+color:white;
+
+
+}
+
+.phoceaReservationDivB h2{
+
+color:white;
+font-size:4.7vw;
+
+}
+
+.phoceaReservationDivB p{
+
+color:white;
+
+
+}
+
+
+
+.ui-datepicker td a
+{    
+  height: 1.4em;   
+}
+
+
+.phoceaReservationDiv3{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgb(250,250,250);
+	top:0%;
+	left:1%;
+	
+	
+}
+
+
+
+.removableMenu{
+	
+	font-family: Diamond;
+	
+}
+
+.centeredText{
+	
+	text-align:center;
+}
+
+
+
+#myText{
+	
+	font-family: Diamond;
+	
+}
+
+.pageTitle{
+	
+	font-size:4vw;
+	color:white;
+	
+}
+
+.pageBandeau{
+	
+	position:absolute;
+	left:0%;
+	top:8%;
+	width:100%;
+	height:20%;
+	background-color:black;
+	
+}
+
+
+
+
+.researchFormDiv{
+	
+	position:absolute;
+	top:30%;
+	left:3%;
+	width:12%;
+	height:6%;
+	/*background-color:black;*/
+}
+
+.researchSelect{
+	
+	width:60%;
+	
+}
+
+
+
+.connexionName{
+	
+	position:absolute;
+	top:10%;
+	left:10%;
+	
+}
+
+.connexionStatut{
+	
+position:absolute;
+	top:30%;
+	left:10%;
+	
+}
+
+.deconnexion{
+	
+	position:absolute;
+	top:50%;
+	left:10%;
+	
+}
+
+.connexionInput{
+	
+	width:70%;
+	
+}
+
+.connexionForm{
+	
+	position:absolute;
+	top:15%;
+	right:1%;
+	width:17%;
+	height:20%;
+	border:solid;
+	border-width:1px;
+	border-radius:5%;
+	z-index:1;
+	background-color:white;
+	padding:1%;
+}
+
+.connexionLabel{
+	
+	font-size:1vw;
+	
+}
+
+
+
+.emptyResultMessage{
+	
+	position:absolute;
+	top:43%;
+	left:20%
+	
+}
+
+.formulaireContact{
+	
+	position:absolute;top:80%;right:0%;width:40%;background-color:black;padding-left:4%;padding-top:1%;color:white;
+	
+}
+
+.contactMessage{
+	
+	  width: 80%;
+	height: 150px;
+  
+  
+	
+}
+
+
+.rotationDiv{
+	
+	transition: transform 2s;
+	
+}
+
+.adnProfileDiv{
+	
+	transition:opacity 2s;
+	
+}
+
+#connexionLabelMail{
+	
+	position:absolute;
+	top:10%;
+	left:10%;
+	
+}
+
+#connexionInputMail{
+	
+	position:absolute;
+	top:20%;
+	left:10%;
+	
+}
+
+
+#connexionLabelMdp{
+	
+	position:absolute;
+	top:35%;
+	left:10%;
+	
+}
+
+
+
+#connexionInputMdp{
+	
+	position:absolute;
+	top:45%;
+	left:10%;
+	
+}
+
+#connexionSubmit{
+	
+	position:absolute;
+	top:65%;
+	left:10%;
+	height:15%;
+	font-size:1vw;
+	
+}
+
+#pasencoreinscrit{
+	
+	position:absolute;
+	top:75%;
+	left:10%;
+	
+}
+
+menuitem{
+	
+	 font-size:4.5vw;
+	
+}
+
+
+p{
+	
+	 font-size:1.5vw;
+	
+}
+
+h1{
+	
+	 font-size:3.2vw;
+}
+
+h2{
+	
+	 font-size:1.5vw;
+}
+
+h3{
+	
+	 font-size:3.15vw;
+	 color:white;
+}
+
+
+label{
+	
+	font-size:1vw;
+	
+}
+
+br{
+	
+	height:5%;
+	
+}
+
+li{
+	
+	font-size:0.8vw;
+	text-align:center;
+	
+}
+
+
+ul{
+	
+	font-size:0.8vw;
+	list-style-type:none;
+	transition: color 1s background-color 1s;
+	
+}
+
+.toggleSubMenu{
+	
+	transition: color 1s , background-color 1s, border-color 1s;
+}
+
+.menuSpan{
+	
+	transition: color 1s , background-color 1s, border-color 1s;
+	
+}
+
+a{
+	
+	font-size:2.5vw;
+	
+}
+
+td a{
+	
+	font-size:4.7vw;
+	
+}
+
+select{
+	
+	font-size:3vw;
+	
+}
+
+option{
+	
+	font-size:3vw;
+	
+}
+
+
+label{
+	
+	font-size:2.5vw;
+	color:white;
+}
+
+iframe{
+    overflow:hidden;
+}
+
+
+.connexionForm input{
+	
+	height:10%;
+	
+}
+
+.mainScrollingDiv{
+	
+	position:absolute;
+	width:40%;
+	
+	left:20%;
+	top:30%;
+	
+	background-color:white;
+	z-index:550;
+	
+	
+}
+
+
+
+
+.neuroP{
+	
+	font-family: neuropol;
+	font-size:145%;
+	
+}
+
+.lemonText{
+	
+	font-family: lemon;
+	
+	
+}
+
+
+#gratuit{
+	
+	font-family: lemon;
+	
+	
+}
+
+
+.centerImgDiv img {
+
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+
+
+*{
+
+/*font-family: myFirstFont;*/
+font-family: caviar;
+color:white;
+/* font-size:2.7vw; */
+}
+
+
+textarea {
+  width: 1000px;
+  height: 150px;
+}
+
+
+.editTextArea {
+  width: 1000px;
+  height: 450px;
+}
+
+h4{
+	
+	font-family: lemon;
+	font-size:80%;
+	
+	
+}
+.centered{
+	
+	
+	
+}
+
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body{background-color:rgb(0,120,215);}

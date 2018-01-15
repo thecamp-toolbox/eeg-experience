@@ -1,0 +1,65 @@
+<head>
+    
+    <meta charset="utf-8">
+   
+    <title>cMSjS</title>
+	
+	<link rel="stylesheet" type="text/css" href="/design.css" />
+
+</head>
+
+
+<body>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://localhost:8081/socket.io/socket.io.js"></script>     
+		
+
+</br>
+<h1 onclick="askIsGoodData()" class="centeredText">Instructions</h1>
+</br>
+<!--
+<p class="centeredText">Sit down and put the muse head-band on your forehead. Keep calm and press START when you're ready.</p>
+-->
+<p class="centeredText">Asseyez vous et placez le Casque Muse sur votre front.</br> Detendez vous et appuyez sur START une fois prets.</p>
+
+</br>
+	
+<p class="centeredText">
+<a href="/checkAttention">START</a>
+</p>
+
+
+<center>
+<image style="width:15%"src="muse.png"/>
+</center>
+
+
+<script>
+
+var soundName = 'INTRO_SPOT_LED.mp3';
+
+var soundPlayer = new Audio(soundName);
+soundPlayer.play();
+
+
+
+function checkAudioCurrentTime(){
+
+	<!-- console.log("CURRENT TIME "+ soundPlayer.currentTime); -->
+
+	var duration = soundPlayer.duration;
+
+	if(soundPlayer.currentTime >= duration){
+		//alert("sound over");
+		window.location.replace("http://localhost:8080/checkAttention");
+	}
+
+}
+
+setInterval(checkAudioCurrentTime,20);
+
+
+</script>
+</body>
